@@ -1,0 +1,174 @@
+.poster {
+    width: '100%';
+    height: 200px;
+    background-color: pink;
+    overflow: hidden;
+}
+
+.top {
+    opacity: 0.8;
+}
+
+.back {
+    position: fixed;
+    font-size: 30px;
+    display: flex;
+    top: 5px;
+    left: 5px;
+    background-color: #fff;
+    border-radius: 50%;
+    opacity: 0.5;
+}
+
+.title {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    justify-content: space-between;
+
+    .name {
+        display: flex;
+    }
+
+    span {
+        color: #191a1b;
+        font-size: 18px;
+        height: 24px;
+        line-height: 24px;
+        margin-right: 7px;
+    }
+
+    i {
+        font-size: 10px;
+        color: #fff;
+        background-color: #d2d6dc;
+        height: 14px;
+        padding: 0 2px;
+        border-radius: 2px;
+        display: inline-block;
+    }
+
+    .grade {
+        width: calc(100% - 250px);
+        text-align: right;
+        color: #ffb232;
+    }
+}
+
+.info {
+    margin-top: 5px;
+}
+
+.synopsisHidden {
+    margin-top: 12px;
+    height: 40px !important;
+    overflow: hidden;
+    transition: height 0.5s;
+}
+
+.synopsisShow {
+    margin-top: 12px;
+    overflow: hidden;
+    transition: height 0.5s;
+}
+
+.toggle {
+    text-align: center;
+}
+
+.button {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.actors {
+    width: 100%;
+    font-size: 16px;
+    padding: 15px;
+}
+
+.actorsImg {
+    overflow: hidden;
+    height: 120px;
+
+    .ul {
+        position: relative;
+        // bottom: -30px;
+        list-style: none;
+        padding-left: 10px;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        overflow-x: auto;
+        overflow-y: hidden;
+
+        li {
+            margin-right: 10px;
+            height: 130px;
+
+            div {
+                overflow: hidden;
+                width: 85px;
+                height: 85px;
+
+                img {
+                    width: 100%;
+                    top: -20px;
+                    position: relative;
+                }
+            }
+
+            span {
+                width: 85px;
+                display: block;
+                text-align: center;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+            }
+
+            .role {
+                font-size: 10px;
+                color: #797d82;
+            }
+        }
+    }
+}
+
+.photos {
+    height: 100px;
+    overflow: hidden;
+    ul {
+        position: relative;
+        // bottom: -30px;
+        list-style: none;
+        padding-left: 10px;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        overflow-x: auto;
+        overflow-y: hidden;
+
+        li {
+            margin-right: 10px;
+            height: 110px;
+            margin-bottom: 10px;
+
+            div {
+                overflow: hidden;
+                width: 150px;
+                height: 100px;
+                // position: relative;
+                display: flex;
+                align-items: center;
+                img {
+                    width: 100%;
+                    // position: absolute;
+                    // top: 50%;
+                }
+            }
+        }
+    }
+}
